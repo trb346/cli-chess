@@ -114,7 +114,7 @@ def create_skeleton_custom_style() -> None:
             file.write("# This file is used to override the default style of cli-chess. It must be kept in dictionary format.\n")
             file.write("# Colors are expected to be HTML color names (e.g. seagreen) or HTML hex colors (e.g. #2E8B57)\n")
             file.write("# Restarting cli-chess or pressing [CTRL+R] on any screen will force a style refresh.\n")
-            file.write("# Visit the cli-chess github page (https://github.com/trevorbayless/cli-chess/) for more styling information.\n\n")
+            file.write("# Visit the cli-chess github page (https://github.com/trb346/cli-chess/) for more styling information.\n\n")
             file.write("{\n\n")
             file.write("}")
     except Exception:

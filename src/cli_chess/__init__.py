@@ -7,5 +7,5 @@ It supports playing chess online using your Lichess.org account as
 well as offline against the Fairy-Stockfish chess engine.
 
 To contribute, report issues, or learn more about cli-chess visit:
-https://github.com/trevorbayless/cli-chess
+https://github.com/trb346/cli-chess
 """

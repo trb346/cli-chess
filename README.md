@@ -8,11 +8,11 @@ offline against the Fairy-Stockfish engine. All Lichess variants are supported.
 </p>
 
 <p align="center">
-    <a href="https://github.com/trevorbayless/cli-chess/actions/">
-        <img alt="CI Workflow" src="https://github.com/trevorbayless/cli-chess/actions/workflows/ci.yml/badge.svg?branch=master&event=push">
+    <a href="https://github.com/trb346/cli-chess/actions/">
+        <img alt="CI Workflow" src="https://github.com/trb346/cli-chess/actions/workflows/ci.yml/badge.svg?branch=master&event=push">
     </a>
-    <a href="https://github.com/trevorbayless/cli-chess/actions/workflows/appimage.yml">
-        <img alt="AppImage" src="https://img.shields.io/github/actions/workflow/status/trevorbayless/cli-chess/appimage.yml?event=release&logo=linux&logoColor=white&label=Build%20AppImage">
+    <a href="https://github.com/trb346/cli-chess/actions/workflows/appimage.yml">
+        <img alt="AppImage" src="https://img.shields.io/github/actions/workflow/status/trb346/cli-chess/appimage.yml?event=release&logo=linux&logoColor=white&label=Build%20AppImage">
     </a>
     <a href="https://pypi.org/project/cli-chess/">
         <img alt="PyPI" src="https://img.shields.io/pypi/v/cli-chess?color=informational&label=PyPI&logo=PyPI">
@@ -26,11 +26,11 @@ offline against the Fairy-Stockfish engine. All Lichess variants are supported.
 
 #### Offline against Fairy-Stockfish
 
-![offline-against-stockfish](https://github.com/trevorbayless/cli-chess/assets/3620552/6d02585e-bca7-4260-aa5c-ccb228d41033)
+![offline-against-stockfish](https://github.com/trb346/cli-chess/assets/3620552/6d02585e-bca7-4260-aa5c-ccb228d41033)
 
 #### Watching Lichess UltraBullet TV
 
-![ultrabullet-tv](https://github.com/trevorbayless/cli-chess/assets/3620552/759ae63b-9e8b-4bee-adb0-1762b13c41a7)
+![ultrabullet-tv](https://github.com/trb346/cli-chess/assets/3620552/759ae63b-9e8b-4bee-adb0-1762b13c41a7)
 
 </details>
 
@@ -72,7 +72,7 @@ steps will only need to be run once as cli-chess will remember the API token.
 ## Custom styling
 
 Nearly every component of cli-chess can be styled by overriding parts of the
-[default style elements](https://github.com/trevorbayless/cli-chess/blob/master/src/cli_chess/utils/styles.py)
+[default style elements](https://github.com/trb346/cli-chess/blob/master/src/cli_chess/utils/styles.py)
 in the `custom_style.py` file. This file will be located at `$HOME/.config/cli-chess/` for Linux and macOS and
 `$APPDATA/cli-chess/` for Windows.
 

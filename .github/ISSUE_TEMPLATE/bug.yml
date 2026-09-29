@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        <b>Thank you for reporting an issue. Before submitting, please [search existing issues](https://github.com/trevorbayless/cli-chess/issues) to confirm this is not a duplicate issue.
+        <b>Thank you for reporting an issue. Before submitting, please [search existing issues](https://github.com/trb346/cli-chess/issues) to confirm this is not a duplicate issue.
         Additionally, please make sure your cli-chess is up to date and the issue occurs in the latest version before reporting.</b>
   - type: textarea
     id: steps

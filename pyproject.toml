@@ -12,10 +12,10 @@ requires-python = ">=3.10"
 license = { text = "GPL-3.0+" }
 
 authors = [
-    { name = "Trevor Bayless", email = "dev@trevor.simplelogin.com" },
+    { name = "Trevor B.", email = "dev@trevor.simplelogin.com" },
 ]
 
-urls = { Homepage = "https://github.com/trevorbayless/cli-chess" }
+urls = { Homepage = "https://github.com/trb346/cli-chess" }
 
 keywords = [
     "chess",

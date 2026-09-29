@@ -28,7 +28,7 @@ class AboutView:
         return HSplit([
             VSplit([
                 HSplit([
-                    Window(FormattedTextControl(HTML("<b>Author:</b> Trevor Bayless"), style="class:label"), dont_extend_width=True, dont_extend_height=True),  # noqa: E501
+                    Window(FormattedTextControl(HTML("<b>Author:</b> Trevor B."), style="class:label"), dont_extend_width=True, dont_extend_height=True),  # noqa: E501
                     Window(FormattedTextControl(HTML("<b>License:</b> GPL v3.0"), style="class:label"), dont_extend_width=True, dont_extend_height=True),  # noqa: E501
                     Window(FormattedTextControl(HTML(f"<b>Version:</b> {version('cli-chess')}"), style="class:label"), dont_extend_width=True, dont_extend_height=True),  # noqa: E501
                 ]),
