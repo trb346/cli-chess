@@ -55,6 +55,8 @@ def is_mac_os() -> bool:
 
 def str_to_bool(s: str) -> bool:
     """Returns a boolean based on the passed in string"""
+    if not isinstance(s, str):
+        return False
     return s.lower() in ("true", "yes", "1")
 
 
