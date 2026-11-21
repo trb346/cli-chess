@@ -52,9 +52,10 @@ def _result_string(metadata) -> str:
 
 def _time_control(metadata) -> Optional[str]:
     clock = metadata.clocks[chess.WHITE]
-    if clock.time is None or clock.increment is None:
+    time = clock.initial_time if clock.initial_time is not None else clock.time
+    if time is None or clock.increment is None:
         return None
-    base_seconds = clock.time // 1000 if clock.units == "ms" else clock.time * 60
+    base_seconds = time // 1000 if clock.units == "ms" else time * 60
     return f"{base_seconds}+{clock.increment}"
 
 

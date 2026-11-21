@@ -349,8 +349,9 @@ class OnlineGameModel(PlayableGameModelBase):
                                 color_as_bool].name = f"Stockfish level {side_data.get('aiLevel', '?')}"
 
                         self.game_metadata.clocks[color_as_bool].units = "ms"
+                        self.game_metadata.clocks[color_as_bool].initial_time = data.get('clock', {}).get('initial')
                         self.game_metadata.clocks[color_as_bool].time = data.get('state', {}).get('wtime' if color == "white" else 'btime')
-                        self.game_metadata.clocks[color_as_bool].increment = data.get('state', {}).get('winc' if color == "white" else 'binc')
+                        self.game_metadata.clocks[color_as_bool].increment = data.get('clock', {}).get('increment', 0) // 1000
 
                 elif EventTopics.MOVE_MADE in args:
                     self.game_metadata.clocks[WHITE].time = data.get('wtime')
