@@ -103,9 +103,10 @@ class OfflineGameModel(PlayableGameModelBase):
         self.game_in_progress = False
         outcome = self.board_model.get_game_over_result()
         self.game_metadata.game_status.status = outcome.termination
-        self.game_metadata.game_status.winner = COLOR_NAMES[outcome.winner]
+        winner = COLOR_NAMES[outcome.winner] if outcome.winner is not None else None
+        self.game_metadata.game_status.winner = winner
 
-        log.info(f"Game over (status={outcome.termination} winner={COLOR_NAMES[outcome.winner]})")
+        log.info(f"Game over (status={outcome.termination} winner={winner})")
         log.debug(f"Ending fen: {self.board_model.board.fen()}")
         log.debug(f"Final move stack: {self.board_model.get_move_stack(as_string=True)}")
 
