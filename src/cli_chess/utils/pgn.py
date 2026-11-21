@@ -45,7 +45,7 @@ def _result_string(metadata) -> str:
         return "1-0"
     if winner == "black":
         return "0-1"
-    if status:
+    if status and status not in ("aborted", "noStart"):
         return "1/2-1/2"
     return "*"
 
